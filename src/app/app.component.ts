@@ -37,4 +37,8 @@ export class AppComponent {
       this.loadingBar.stop();
     }
   }
+  searchId(id) {
+    console.log(id);
+    this.router.navigate(['/edit', id]);
+  }
 }

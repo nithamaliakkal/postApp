@@ -25,12 +25,13 @@
           type="search"
           placeholder="Please enter id"
           aria-label="Search"
+          (keyup.enter)="searchId(id.value)"
           #id
         />
         <button
           class="btn btn-outline-primary my-2 my-sm-0"
           type="button"
-          [routerLink]="['/edit', id.value]"
+          (click)="searchId(id.value)"
         >
           Search
         </button>

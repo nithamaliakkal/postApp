@@ -30,7 +30,14 @@
     <p class="card-text">
       {{ post.body | titlecase }}
     </p>
-    <a [routerLink]="['/edit', post.id]" class="btn btn-primary">Edit</a>
-    <a (click)="deletePost(post.id)" class="btn btn-danger">Delete</a>
+    <a [routerLink]="['/edit', post.id]" class="btn btn-primary"
+      ><i class="fas fa-pencil-alt icon"></i>Edit</a
+    >
+    <a
+      (click)="deletePost(post.id)"
+      class="btn btn-danger"
+      style="color: aliceblue;"
+      ><i class="fas fa-trash icon"></i>Delete</a
+    >
   </div>
 </div>
